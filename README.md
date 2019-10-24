@@ -36,7 +36,9 @@ Yes. As of now you must have an API Layer Key to use Simple Currency Converter. 
 
 == Screenshots ==
 1. Widget running in preview.
+<img src="screenshots/screenshot-1.png">
 2. Widget running on live site.
+<img src="screenshots/screenshot-2.png">
 
 == Changelog ==
 1.0
