@@ -2,9 +2,8 @@
 namespace CurrencyConverter;
 
 /**
- * Class Plugin
  *
- * Main Plugin class
+ * Plugin class
  * @since 1.2.0
  */
 class Plugin {
@@ -40,8 +39,6 @@ class Plugin {
 	/**
 	 * widget_scripts
 	 *
-	 * Load required plugin core files.
-	 *
 	 * @since 1.2.0
 	 * @access public
 	 */
@@ -54,8 +51,6 @@ class Plugin {
 	/**
 	 * Include Widgets files
 	 *
-	 * Load widgets files
-	 *
 	 * @since 1.2.0
 	 * @access private
 	 */
@@ -66,33 +61,27 @@ class Plugin {
 	/**
 	 * Register Widgets
 	 *
-	 * Register new Elementor widgets.
-	 *
 	 * @since 1.2.0
 	 * @access public
 	 */
 	public function register_widgets() {
-		// Its is now safe to include Widgets files
 		$this->include_widgets_files();
 
-		// Register Widgets
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Currency_Converter() );
 	}
 
 	/**
-	 *  Plugin class constructor
+	 *  Class constructor
 	 *
-	 * Register plugin action hooks and filters
+	 * Register hooks and filters
 	 *
 	 * @since 1.2.0
 	 * @access public
 	 */
 	public function __construct() {
 
-		// Register widget scripts
 		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'widget_scripts' ] );
 
-		// Register widgets
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 
 
@@ -101,5 +90,5 @@ class Plugin {
 	}
 }
 
-// Instantiate Plugin Class
+// Instantiate
 Plugin::instance();
