@@ -1,13 +1,6 @@
 # Simple Currency Converter
 === Simple Currency Converter ===
 
-Contributors: ejincollective
-Donate link: https://www.ejincollective.com/simple-currency-converter/
-Tags: currency, elementor, converter, elementor add-on, currency converter
-Requires at least: 5.0.0
-Tested up to: 5.2.2
-Stable tag: 5.0.0
-
 Calculate currency conversions in a flash with this custom widget for Elementor.
 
 == Description ==
@@ -49,9 +42,6 @@ Yes. As of now you must have an API Layer Key to use Simple Currency Converter. 
 
 == Translations ==
 * Coming soon!
-
-== Additional Info ==
-* For more information visit [our website](https://www.ejincollective.com/simple-currency-converter/).
 
 == Credits ==
 * Us. We did all of this.
